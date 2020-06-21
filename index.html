@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>My Protofilio</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald|Source+Sans+Pro:200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
+<html>
 
-    </head>
-    <body>
-        <div id="nav-div"></div>
-        <nav id="navbar">
-            <a href="#welcome-section" class="nav-text">About me</a>
-            <a href="#projects" class="nav-text">Projects</a>
-            <a href="#Contact" class="nav-text">Contact</a>
-        </nav>
-        <div id="welcome-section">
-            <h1>Hey I'm Abdalrashid</h1>
-            <h3 class="description">a passionate front-end developer</h3>
-        </div>
-        <div id="projects">
-            <h2 class="projects-title">These Are My Projects</h2>
-            <div id="tiles-div">
-                <a href="https://codepen.io/abdabdii/full/vYOQKXJ" target="_blank"><div class="project-tile"><img src="https://i.ibb.co/myX3970/Doc.png" class="project-img" alt="project-tile"><h3 class="tile-text"><span class="span-tile"> &lt;  </span>Documentation Page <span class="span-tile"> /></span></h3></div></a>
-                <a href="https://codepen.io/abdabdii/full/QWbVrwK" target="_blank"><div class="project-tile"><img src="https://i.ibb.co/94s14Xx/Landing.png" class="project-img" alt="project-tile"><h3 class="tile-text"><span class="span-tile"> &lt;  </span>Product Landing Page <span class="span-tile"> /></span></h3></div></a>
-                <a href="https://codepen.io/abdabdii/full/VwLGMWm" target="_blank"><div class="project-tile"><img src="https://i.ibb.co/314zQqd/Survey.png" class="project-img" alt="project-tile"><h3 class="tile-text"><span class="span-tile">  &lt; </span>Survey Form <span class="span-tile"> /></span></h3></div></a>
-                <a href="PixelArt/index.html" target="_blank"><div class="project-tile"><img src="PixelArt/myimg.png" class="project-img" alt="project-tile"><h3 class="tile-text"><span class="span-tile"> &lt; </span>Pixel Art<span class="span-tile"> /></span></h3></div></a>
-            </div>
-        </div>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <div id="Contact">
-            <h2 class="contact-text">Let's work together...</h2>
-            <div id="social-div">
-                <a href="https://github.com/abdabdii" class="fa fa-github" id="profile-link" target="_blank" ></a>
-                <a href="https://www.linkedin.com/in/abdalrashid-saeed-9680a31b1/" class="fa fa-linkedin" target="_blank"></a>
-            </div>
-            </div>
-    </body>
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker" value="#ff0000">
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas"></table>
+
+    <script src="designs.js"></script>
+</body>
+
 </html>
