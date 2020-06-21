@@ -1,0 +1,211 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    overflow-x:hidden;
+  }
+
+  h1{
+    display:inline;
+    font-family: 'Oswald', sans-serif;
+    font-size:5em;
+    color:#000;
+    
+  }
+
+  h3{
+    display:inline;
+    margin:0;
+    color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .description{
+    font-style:italic;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:100;
+    font-size:1.5em;
+  }
+
+  h2{
+    
+    margin-top:20px;
+    padding:5px;
+    border-bottom:2px white solid;
+  }
+
+  .projects-title{
+    font-size:3em;
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .nav-text{
+    font-family: 'Oswald', sans-serif;
+    font-size:1.5em;
+    color:white;
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-top:4vh;
+    padding-bottom:4vh;
+    
+    transition:1s;
+  }
+  .nav-text:hover{
+    background-color:#726640;
+  }
+  
+  #nav-div{
+    width:100vw;
+  }
+  
+  #welcome-section{
+    height:100vh;
+    width:100vw;
+    background-color:#77A0A9;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+ 
+  nav{
+    position:fixed;
+    width:100vw;
+    height:15vh;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    background-color:#2A324B;
+  }
+
+  #projects{
+    width:100vw;
+    background-color:#4C84C9;
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+  }
+
+  #tiles-div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+  
+  }
+
+  .project-tile{
+    display:flex;
+    flex-direction:column;
+    width:40vw;
+    background-color:#F78154;
+    margin-bottom:30px;
+    box-shadow: 3px 2px #888888 , -3px -2px #888888;
+  }
+
+  .project-img{
+    height:250px;
+    width:100%;
+  }
+
+  .tile-text{
+    align-self:center;
+    margin:15px;
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+    letter-spacing:.5px;
+  
+  }
+
+  .project-tile .span-tile{
+    opacity: 0;
+    transition:1s;
+    font-size:1.1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight:900;
+  
+    color:#D1005A;
+  }
+
+  .project-tile:hover .span-tile{
+    opacity:1;
+  }
+  
+  #Contact{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#7586be;
+    
+  }
+  .contact-text{ 
+    display:inline;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size:4em;
+    color:#000;
+    border:none;
+    
+  }
+  .fa{
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right:20px;
+    transition:1s;
+    box-shadow: 2px 2px 5px 0px #3b3b3b;
+    margin-bottom:20px;
+  }
+  .fa-github{
+   background: black;
+   color: white;
+    
+  }
+  .fa-linkedin {
+    background: black;
+    color: white;
+  }
+  
+  .fa:hover{
+    transform:scale(1.2);
+  }
+  
+  @media only screen and (min-width:425px) and (max-width:768px){
+    
+    body{
+      font-size:12px;
+    }
+  }
+  
+  @media only screen and (max-width:425px){
+    .project-tile{
+      width:80vw;
+      font-size: 12px;
+
+    }
+
+    body{
+      font-size:8px;
+      justify-content: center;
+    }
+    nav{
+        font-size: 12px;
+    }
+    
+
+  }
+ 
+  
